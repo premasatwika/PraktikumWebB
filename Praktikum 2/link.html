@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>HTML Link</title>
+        <style>
+            body{
+                font-size: 16px;
+                line-height: 28px;
+                background-color: rgb(227, 227, 227);
+            }
+            .container{
+                width: 800px;
+                margin: auto;
+                background-color: rgb(240, 240, 240);
+                padding: 20px;
+            }
+            .header{
+                padding: 20px;
+                background-color: rgb(190, 190, 190);
+                text-align: center;
+            }
+            .container2{
+                background-color: white;
+                margin-top: 20px;
+                padding: 5px;
+            }
+            .text{
+               margin-left: 80px;
+               margin-top: 45px;
+               margin-bottom: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="header">
+                <h1 class="judul">PENERAPAN HTML LINK</h1>
+            </div>
+            
+            <div class="container2">
+                <h1>Jenis-jenis Link</h1>
+                <h2>Internal Link</h2>
+                <p>Internal Link adalah link yang menuju ke domain atau halaman local dari web itu sendiri. Contohnya seperti menu dari suatu website, seperti menu account, dashboard, maupun about us yang dimana jika anda mengklik menu tersebut anda akan diarahkan ke halaman lain namun masih dalam satu website/situs. <br>Contoh : <a href="about.html">About Us</a>
+                </p>
+                <h2>Eksternal Link</h2>
+                <p>Eksternal Link adalah link yang menuju ke domain halaman web domain diluar halaman local. Dengan kata lain eksternal link ini akan membuka situs yang berbeda seperti : mengarahkan ke halaman facebook, youtube, dan sebagainya. <br>Contoh : <a href="https://www.youtube.com/">Youtube</a>
+                </p>
+            </div>
+
+            <div class="container2">
+                <h1>Atribut pada Link</h1>
+                <div>
+                    <h2>Target</h2>
+                    <p>Penggunaan atribut target frame. Klik link berikut :
+                        <a href="https://www.petanikode.com/" target="frame1">Petani Kode</a>
+                    </p>
+                    <p>
+                        <!-- Frame yang akan menjadi target dari link--> 
+                        <iframe name="frame1" width="780px" height="400"></iframe>
+                    </p>
+                </div>
+                <div>
+                    <h2>Title</h2>
+                    <p>Penggunaan atribut title. <br> Atribut ini berfungsi untuk membuat informasi tambahan yang akan tampil saat pointer diletakkan pada link atau saat kita menahan tap di hp.
+                    <a href="https://www.facebook.com/" title="Menuju ke halaman Facebook">Facebook</a>
+                    </p>
+                </div>
+                <div id="container2">
+                    <h2>Style</h2>
+                    <p>Atribut ini berfungsi untuk mengubah tampilan atau memberi style pada link, karena secara default link akan tampil warna biru pada browser. Dengan menggunakan atribut style kita dapat merubah atau menghilangkan warna pada link seperti pada contoh di bawah.
+                    </p>
+                    <ul>
+                        <a href="#container2" style="color:red">Home</a> | 
+                        <a href="#container2" style="color:green">Contact</a> | 
+                        <a href="#container2" style="color:deeppink">About</a> | 
+                        <a href="#container2" style="color:white;background-color: orange;">Download</a> | 
+                        <a href="#container2" style="text-decoration: none;">Download</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container2">
+                <h2>Link Anchor</h2>
+                <p id="first">
+                    Go to <a href="#last">last paragraph.</a>
+                </p>
+                <h2><center>Website</center></h2>
+                <p align="justify">
+                    Web adalah sebuah penyebaran informasi melalui internet. Sebenarnya antara www (world wide web) dan web adalah sama karena kebanyakan orang menyingkat www menjadi web saja. Web merupakan hal yang tidak dapat dipisahkan dari dunia internet. Melalui web, setiap pemakai internet bisa mengakses informasi-informasi di situs web yang tidak hanya berupa teks, tetapi juga dapat berupa audio, visual maupun yang lain. Sebenarnya, web merupakan kumpulan-kumpulan dokumen yang banyak tersebar di beberapa komputer server yang berada di seluruh penjuru dunia dan terhubung menjadi satu jaringan melalui jaringan yang disebut internet.    
+                </p>
+                <p align="justify"> 
+                    Terdapat 2 jenis web yaitu website statis merupakan website yang isi kontennya tidak dapat diubah secara langsung oleh end-user. Isi dari website hanya bisa diubah oleh orang yang mengerti mengenai bahasa pemrograman atau tools untuk merancang halaman website. Website jenis ini tidak mempunyai basis data, jadi informasi yang disampaikan ditulis langsung ke dalaman sintax. Biasanya website jenis ini dibuat untuk menampilkan informasi yang jarang diupdate misalnya Company Profile. Contoh teknologi yang berkaitan dengan web statis adalah Client Side seperti HTML. HTML sendiri  adalah sebuah bahasa markah yang digunakan untuk membuat sebuah halaman web. Dan yang kedua adalah Website dinamis adalah website yang isi kontennya sudah termanajemen dengan kata lain, sudah menerapkan sistem Content Management System untuk informasi yang disampaikannya. End-user bisa sewaktu-waktu mengupdate konten pada halaman website tanpa perlu faham sintax ataupun bahasa pemrograman.
+                </p>
+                <p align="justify">
+                    Saat kita berselancar didunia maya kita memerlukan browser untuk mencari informasi apa yang kita inginkan di dunia maya. Selain itu kita juga memerlukan penghubung atau tautan(link) yang dapat membantu kita dalam mencari sesuatu yang kita inginkan di dunia maya. Penulis disini ingin membahas mengenai link tersebut dalam HTML.
+                </p>
+
+                <p id="last">
+                    Go to <a href="#first">first paragraph.</a>
+                </p>
+            </div>
+
+            <div class="container2">
+                <h2>Link Bergambar</h2>
+                <a href="https://www.w3schools.com/" title="w3schools">
+                    <img src="https://lh3.googleusercontent.com/i-ij7KM2pFUUpFE31QAUDXg5mzGFNbm16S4tjmg2ZyuhCGLgNJ8oXJRbq7ysh6LoZg=s180-rw" style="float:left;" height="70" width="70"/></a>
+                    <div class="text">
+                        <h2 >THE WORLD'S LARGEST WEB DEVELOPER SITE</h2>
+                    </div>
+            </div>
+
+            <div class="container2">
+                <h2>Download Link</h2>
+                <p>Materi Praktikum Pemrograman Berbasis Web :
+                    <a href="pertemuan2(LINK).zip" title="pertemuan2(LINK).zip">Download</a>
+                </p>
+            </div>
+
+            <div class="container2">
+                <h2>Link Untuk Mengirim Email</h2>
+                <p>
+                    Contact me on : 
+                    <a href="mailto:premasatwika6@gmail.com" title="Send mail to : premasatwika6@gmail.com">premasatwika6@gmail.com</a>
+                </p>
+            </div>
+
+            <div class="container2">
+                <h2>Link Dengan Button</h2>
+                <p>Click the button below to go to HTML Link site.</p>
+                <button onclick="document.location='link.html'">HTML Link</button>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>
